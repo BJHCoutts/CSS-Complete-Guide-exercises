@@ -44,11 +44,11 @@ html {
 
 body {
   margin: 0;
-  background-image: url(favicon.png);
+  /* background-image: url(favicon.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center; */
   /* height: 100%; */
 }
 
@@ -68,7 +68,7 @@ section {
   /* height: 100%; */
   width: 100%;
   box-sizing: border-box;
-  margin-bottom: 2em;
+  /* margin-bottom: 2em; */
 }
 
 p {
@@ -96,6 +96,34 @@ p::first-letter {
   vertical-align: middle;
 }
 
+.main-footer {
+  background: black;
+  padding: 1em;
+  /* margin-top: 1.5em; */
+}
+
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+.main-footer__link > a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link > a:hover,
+.main-footer__link > a:active {
+  color: #2ddf5c;
+}
+
 .main-nav {
   display: inline-block;
   width: calc(100% - 150px);
@@ -119,14 +147,14 @@ p::first-letter {
   font-weight: bold;
 }
 .main-nav__item a {
-  color: #0e4f1f;
+  color: #d5ffdc;
   text-decoration: none;
 }
 .main-nav__item a:hover,
 .main-nav__item a:active {
-  color: #ff1b68;
+  color: white;
   text-decoration: none;
-  border-bottom: 5px solid white;
+  /* border-bottom: 5px solid white; */
 }
 
 .main-nav__item a::after {
@@ -140,28 +168,29 @@ p::first-letter {
   margin: 0;
 }
 
-.main-nav__item--cta {
+.main-nav__item--cta h2 {
   text-align: center;
-  color: white;
-  background-color: #ff1b68;
-  padding: 8px 16px;
+  /* color: white;  */
+  /* background-color: #d5ffdc; */
+  padding: 0.5em;
+  border: solid 3px #d5ffdc;
   border-radius: 6px;
-  border: solid 3px white;
+  /* border: solid 3px white; */
 }
 
-.main-nav__item--cta:hover,
-.main-nav__item--cta:active {
-  color: #ff1b68;
-  background-color: white;
+.main-nav__item--cta h2:hover,
+.main-nav__item--cta h2:active {
+  background: #0e4f1f;
+  border-color: white;
 }
 
 .section-title {
-  font: 24pt "Bellefair", serif;
-  background-color: #ff1b68;
-  color: white;
+  font: 24pt "Gill Sans", sans-serif;
+  /* background-color: #ff1b68; */
+  color: #2ddf5c;
   text-align: center;
   padding: 0.5em 0;
-  border-bottom: solid 3px white;
+  /* border-bottom: solid 3px white; */
 }
 
 section#product_overview {
@@ -219,7 +248,7 @@ section#product_overview {
   border-radius: 4px;
   /* border-radius can have 4 values, tl tr br bl */
   box-shadow: 2px 2px 2px 2px rgba(14, 79, 31, 0.5);
-  font-size: 14pt;
+  font-size: 1.2em;
   margin-bottom: 1em;
 }
 
@@ -252,4 +281,40 @@ section#product_overview {
   color: #0e4f1f;
   background: #d5ffdc;
   outline: none;
+}
+
+.key-feature__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.key-feature {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  font-size: 1.2em;
+}
+
+.key-feature__description {
+  color: white;
+}
+
+.key-feature__image {
+  border-radius: 50%;
+  background: #ffcdee;
+  width: 4em;
+  height: 4em;
+  margin: 0 auto;
+}
+
+#key-features {
+  background: #ff1b68;
+}
+
+#key-features > .section-title {
+  color: white;
+  margin: 1em;
+  padding: 1em;
 }
