@@ -8,8 +8,12 @@
       href="https://fonts.googleapis.com/css?family=Anton|Bellefair"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="../favicon.png" />
+    <link rel="stylesheet" href="../common.css" />
+    <link rel="stylesheet" href="packages.css" />
+    <!--
+      order of script imports is very important! parses top down, less specific ones go first
+    -->
     <!--
       <style>
           section {
@@ -38,82 +42,14 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <!-- <section style="background: #ff1b68;"> -->
-      <section id="product_overview">
-        <h1>Get the freedom you deserve.</h1>
-      </section>
-      <section>
-        <h1 class="section-title">Choose your plan</h1>
-        <p>Get the most for your money</p>
 
-        <div>
-          <article class="plan">
-            <h1 class="plan__title">FREE</h1>
-            <h2 class="plan__price">$0/month</h2>
-            <h3>For hobby projects or small teams.</h3>
-            <ul class="plan__features">
-              <li>1 Workspace</li>
-              <li>Unlimited Traffic</li>
-              <li>10GB Storage</li>
-              <li>Basic Support</li>
-            </ul>
-            <div><button class="button">CHOOSE PLAN</button></div>
-          </article>
-
-          <article class="plan plan--highlighted">
-            <h1 class="plan__annotation ">RECOMMENDED</h1>
-            <h1 class="plan__title">PLUS</h1>
-            <h2 class="plan__price">$29/month</h2>
-            <h3>For ambitious projects.</h3>
-            <ul class="plan__features">
-              <li>5 Workspaces</li>
-              <li>Unlimited Traffic</li>
-              <li>100GB Storage</li>
-              <li>Plus Support</li>
-            </ul>
-            <div><button class="button">CHOOSE PLAN</button></div>
-          </article>
-          <article class="plan">
-            <h1 class="plan__title">PREMIUM</h1>
-            <h2 class="plan__price">$99/month</h2>
-            <h3>Your enterprise solution.</h3>
-            <ul class="plan__features">
-              <li>10 Workspaces</li>
-              <li>Unlimited Traffic</li>
-              <li>Unlimited Storage</li>
-              <li>Priority Support</li>
-            </ul>
-            <div><button class="button">CHOOSE PLAN</button></div>
-          </article>
-        </div>
-      </section>
-
-      <section id="key-features">
-        <h1 class="section-title">Many Good Reasons to Stick Around</h1>
-        <ul class="key-feature__list">
-          <li class="key-feature">
-            <div class="key-feature__image"></div>
-            <p>3,857,000 Trusting Customers</p>
-          </li>
-          <li class="key-feature">
-            <div class="key-feature__image"></div>
-            <p>99.999% Uptime Guarantee</p>
-          </li>
-          <li class="key-feature">
-            <div class="key-feature__image"></div>
-            <p>Lightning Fast CDN</p>
-          </li>
+    <footer class="main-footer">
+      <nav>
+        <ul class="main-footer__links">
+          <li class="main-footer__link"><a href="#">Support</a></li>
+          <li class="main-footer__link"><a href="#">Terms of Use</a></li>
         </ul>
-      </section>
-      <footer class="main-footer">
-        <nav>
-          <ul class="main-footer__links">
-            <li class="main-footer__link"><a href="#">Support</a></li>
-            <li class="main-footer__link"><a href="#">Terms of Use</a></li>
-          </ul>
-        </nav>
-      </footer>
-    </main>
+      </nav>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,205 @@
+/* css is case insensitive, use - or _, not camelCase */
+/* + adjacent is directly after*/
+/* ~ sibling is same level */
+/* > child all specified elements directly underneath it */
+/*   descendant is all specified elements anywhere underneath it */
+/* more specific is better performance Id and class */
+
+/* [disabled] is an attribute selector */
+
+/* if you want an inner border, set box sizing to border box */
+
+/* margin collapsing means that margins overlap, the larger margin wins */
+/* border width style color, use shorthand, use border-width to specifically overide OR if you just want top it's better to say top than  # 0 0 0 */
+
+/* click arrow in tools to see all the sub properties underneath the shorthand */
+
+/* display none VS visibility hidden */
+
+/* a.any_class targets an anchor tag with the class any_class, probably for JS DOM maniplulation? */
+
+/* when something has two competing classes, it matters the order they are in the css, not in the 
+
+<div style="height: 3em;width:3em;"  class="blue red"/>
+
+.blue {
+  background: blue;
+}
+.red {
+  background: red;
+} */
+
+/* :not(.class) excluding psuedo class (any selector)*/
+
+/* mdn or caniuse for compatibility */
+
+html {
+  /* height: 100%; */
+}
+
+* {
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* background-image: url(favicon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; */
+  /* height: 100%; */
+}
+
+main {
+  /* height: 100%; */
+}
+
+h1 {
+  color: white;
+  font: 2em "Anton", sans-serif;
+  letter-spacing: 0.1em;
+  margin: 0;
+  /* display: inline-block; */
+}
+
+section {
+  /* height: 100%; */
+  width: 100%;
+  box-sizing: border-box;
+  /* margin-bottom: 2em; */
+}
+
+p {
+  font-family: inherit;
+}
+
+p::first-letter {
+  font-size: 2em;
+}
+
+.main_header {
+  width: 100%;
+  background-color: #2ddf5c;
+  padding: 0.5em 1em 1em 2em;
+}
+
+.main-header__brand {
+  display: inline-block;
+  text-decoration: none;
+  font: bold 2.25em "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+  /* font-size: 2.25em;
+  font-weight: bold; */
+  vertical-align: middle;
+}
+
+.main-footer {
+  background: black;
+  padding: 1em;
+  /* margin-top: 1.5em; */
+}
+
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+.main-footer__link > a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link > a:hover,
+.main-footer__link > a:active {
+  color: #2ddf5c;
+}
+
+.main-nav {
+  display: inline-block;
+  width: calc(100% - 150px);
+}
+
+.main-nav__items {
+  text-align: right;
+  display: inline-block;
+  list-style: none;
+  color: white;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+}
+.main-nav__item {
+  text-decoration: none;
+  color: rgb(245, 145, 145);
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 1.5em;
+  font-weight: bold;
+}
+.main-nav__item a {
+  color: #d5ffdc;
+  text-decoration: none;
+}
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: white;
+  text-decoration: none;
+  /* border-bottom: 5px solid white; */
+}
+
+.main-nav__item a::after {
+  content: " :)";
+  align-content: center;
+  color: #ff1b68;
+}
+.main-nav__item h2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.main-nav__item--cta h2 {
+  text-align: center;
+  /* color: white;  */
+  /* background-color: #d5ffdc; */
+  padding: 0.5em;
+  border: solid 3px #d5ffdc;
+  border-radius: 6px;
+  /* border: solid 3px white; */
+}
+
+.main-nav__item--cta h2:hover,
+.main-nav__item--cta h2:active {
+  /* background: #ff1b68; */
+  border-color: white;
+}
+
+.button {
+  color: white;
+  border: none;
+  background: #0e4f1f;
+  font: inherit;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0.5em;
+  margin: 0.75em 0;
+  border: solid 2px #0e4f1f;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  color: #0e4f1f;
+  background: #d5ffdc;
+  outline: none;
+}
