@@ -36,6 +36,8 @@
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -43,8 +45,6 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   /* background-image: url(favicon.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -67,14 +67,6 @@ body {
 /* main {
   height: 100%;
 } */
-
-h1 {
-  color: white;
-  font: 1.5rem "Anton", sans-serif;
-  letter-spacing: 0.1rem;
-  margin: 0;
-  /* display: inline-block; */
-}
 
 section {
   /* height: 100%; */
