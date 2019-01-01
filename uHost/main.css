@@ -1,74 +1,73 @@
-.overlay-text {
-  position: absolute;
-  left: 1em;
-  bottom: 1em;
-  color: white;
-  font: 1.5rem "Anton", sans-serif;
-  letter-spacing: 0.1rem;
-  margin: 0;
-  /* display: inline-block; */
+#product-overview {
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("images/freedom.jpg") center/cover no-repeat border-box,
+    #ff1b68;
+  /* background-image: url("freedom.jpg");
+    background-size: cover;
+    background-position: left 10% bottom 20%; */
+  /* background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box; */
+  /* background-image: linear-gradient(180deg, red 70%, blue 60%, rgba(0,0,0,0.5)); */
+  /* background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue 70%, green); */
+  width: 100vw;
+  height: 33vh;
+  /* border: 5px dashed red; */
+  position: relative;
 }
 
-#product_overview {
-  /* background: radial-gradient(
-    ellipse 20rem 40rem at 20% 80%,
-    #e66465 35%,
-    #9198e5 55%
-  ); */
-  /* background: radial-gradient(circle 40rem at 20% 80%, #e66465 35%, #9198e5 55%); */
-  /* background: linear-gradient(45deg, #e66465 65%, #9198e5); */
-  /* background: url("./images/Llama_lying_down.jpg") center/cover no-repeat fixed; */
-  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-    url("./images/freedom.jpg") 30% 15% / cover no-repeat border-box, #ff1b68;
-  width: 100%;
-  height: 33vh;
-  padding: 10px;
-  margin-top: 68px;
-  position: relative;
-  /* border: solid #0e4f1f;
-  border-width: 0.25rem 0;
-  margin: 0; */
+#product-overview h1 {
+  color: white;
+  font-family: "Anton", sans-serif;
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 40rem) and (min-height: 40rem) {
+  #product-overview {
+    height: 40vh;
+    background-position: 50% 25%;
+  }
+
+  #product-overview h1 {
+    font-size: 3rem;
+  }
 }
 
 .section-title {
-  font: 24pt "Gill Sans", sans-serif;
-  /* background-color: #ff1b68; */
   color: #2ddf5c;
   text-align: center;
-  margin-bottom: 2rem;
-  /* border-bottom: solid 3px white; */
 }
 
-.plan__container {
-  padding-top: 2rem;
-}
-
-.plan__container > p {
-  margin-bottom: 1rem;
-}
 .plan {
-  width: 100%;
   background: #d5ffdc;
   text-align: center;
-  display: block;
   padding: 1rem;
-  color: rgb(14, 79, 31);
-}
-
-.plan > h1,
-.plan > h2 {
-  margin-bottom: 0.5rem;
-}
-
-.plan > h3 {
-  margin-bottom: 0.75rem;
+  margin: 0.5rem 0;
+  width: 100%;
 }
 
 .plan--highlighted {
-  background: #2ddf5c;
+  background: #19b84c;
   color: white;
-  /* box-shadow: 2px 2px 2px 2px rgba(14, 79, 31, 0.5); */
-  /* x y blur spread */
+}
+
+.plan__annotation {
+  background: white;
+  color: #19b84c;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.plan__title {
+  color: #0e4f1f;
+}
+
+.plan__price {
+  color: #858585;
 }
 
 .plan--highlighted .plan__title {
@@ -76,81 +75,85 @@
 }
 
 .plan--highlighted .plan__price {
-  color: lightgrey;
-}
-
-.plan__title {
-  color: #2ddf5c;
-}
-
-.plan__price {
-  color: grey;
-}
-
-.plan__annotation {
-  background: white;
-  color: #2ddf5c;
-  padding: 0.5rem;
-  border-radius: 4px;
-  /* border-radius can have 4 values, tl tr br bl */
-  box-shadow: 2px 2px 2px 2px rgba(14, 79, 31, 0.5);
-  font-size: 1.2rem;
-  margin: 0 auto 1rem auto;
-  min-width: 12rem;
-  max-width: 18rem;
+  color: #0e4f1f;
 }
 
 .plan__features {
   list-style: none;
-  padding: 0;
   margin: 0;
-}
-
-.plan__features li {
-  margin-bottom: 0.75rem;
-  font: 12pt sans-serif;
-}
-
-.key-feature__list {
-  list-style: none;
   padding: 0;
-  margin: 0;
-  text-align: center;
 }
 
-.key-feature {
-  /* display: inline-block; */
-  width: 100%;
-  vertical-align: top;
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+.plan__feature {
+  margin: 0.5rem 0;
 }
 
-.key-feature__description {
-  color: white;
-}
+@media (min-width: 40rem) {
+  .plan__list {
+    width: 100%;
+    text-align: center;
+  }
 
-.key-feature__image {
-  border-radius: 50%;
-  background: #ffcdee;
-  width: 4rem;
-  height: 4rem;
-  margin: 0 auto 1rem auto;
-  padding: 10px;
+  .plan {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    min-width: 13rem;
+    max-width: 25rem;
+  }
+
+  .plan--highlighted {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
 }
 
 #key-features {
   background: #ff1b68;
-  padding: 2rem 0 3rem 0;
+  margin-top: 5rem;
+  padding: 1rem;
 }
 
-#key-features > .section-title {
+#key-features .section-title {
   color: white;
+  margin: 2rem;
 }
 
-#key-features p {
-  font-size: 0.8rem;
+.key-feature__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
+
+.key-feature__image {
+  background: #ffcede;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.key-feature__description {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 40rem) {
+  .key-feature {
+    display: inline-block;
+    width: 30%;
+    max-width: 25rem;
+    vertical-align: top;
+  }
+}
+
+/* h1 {
+    font-family: sans-serif;
+} */
 
 .modal {
   position: fixed;
@@ -168,7 +171,6 @@
 .modal__title {
   text-align: center;
   margin: 0 0 1rem 0;
-  color: #2ddf5c;
 }
 
 .modal__actions {
@@ -200,48 +202,4 @@
 .modal__action--negative:active {
   background: #ff5454;
   border-color: #ff5454;
-}
-
-@media (min-width: 40rem) {
-  .plan__container {
-    padding: 2rem 0 3rem 0;
-  }
-  .plan {
-    display: inline-block;
-    width: 25%;
-    min-width: 15rem;
-    max-width: 600px;
-    margin: 1rem;
-    vertical-align: middle;
-    border-radius: 3px;
-  }
-
-  .plan__list {
-    /* width: 90%; */
-    margin: auto;
-    text-align: center;
-    /* padding: 1rem 0 2rem 0; */
-  }
-
-  .plan--highlighted {
-    box-shadow: 2px 2px 2px 2px rgba(14, 79, 31, 0.5);
-    /* x y blur spread */
-  }
-
-  #product_overview {
-    height: 40vh;
-    background-position: 40% 20%;
-  }
-  #product_overview h1 {
-    font-size: 3rem;
-  }
-
-  .key-feature {
-    display: inline-block;
-    width: 30%;
-  }
-
-  #key-features p {
-    font-size: 1rem;
-  }
 }
