@@ -119,10 +119,11 @@
 }
 
 .key-feature {
-  display: inline-block;
-  width: 30%;
+  /* display: inline-block; */
+  width: 100%;
   vertical-align: top;
   font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .key-feature__description {
@@ -147,7 +148,7 @@
   color: white;
 }
 
-#key-features > p {
+#key-features p {
   font-size: 0.8rem;
 }
 
@@ -233,5 +234,14 @@
   }
   #product_overview h1 {
     font-size: 3rem;
+  }
+
+  .key-feature {
+    display: inline-block;
+    width: 30%;
+  }
+
+  #key-features p {
+    font-size: 1rem;
   }
 }

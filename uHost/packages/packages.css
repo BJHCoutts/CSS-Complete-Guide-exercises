@@ -20,6 +20,10 @@ main {
   border-left: none;
 }
 
+.package:first-of-type {
+  margin-top: 2.2rem;
+}
+
 .package:hover,
 .package:active {
   box-shadow: 2px 2px 4px (0, 0, 0, 0.5);
@@ -100,4 +104,10 @@ main {
 #premium .package__info {
   color: #bbb;
   border-color: #979797;
+}
+
+@media (min-width: 50rem) {
+  .package:first-of-type {
+    margin: 1rem 0;
+  }
 }
