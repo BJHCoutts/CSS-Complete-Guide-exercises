@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -201,10 +203,24 @@ main {
   cursor: pointer;
 }
 
+.button[disabled] {
+  cursor: not-allowed;
+  border: #a1a1a1;
+  background: #ccc;
+  color: #a1a1a1;
+}
+
 .button:hover,
 .button:active {
   background: white;
   color: #0e4f1f;
+}
+
+.button[disabled]:hover {
+  cursor: not-allowed;
+  border: #a1a1a1;
+  background: #ccc;
+  color: #a1a1a1;
 }
 
 .button:focus {
@@ -212,7 +228,7 @@ main {
 }
 
 .open {
-    display: block !important;
+  display: block !important;
 }
 
 @media (min-width: 40rem) {
