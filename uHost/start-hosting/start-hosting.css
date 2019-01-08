@@ -10,11 +10,17 @@ main {
 }
 
 .signup-form {
-  padding: 1rem;
+  padding: 2.5rem;
+  display: grid;
+}
+
+.signup-form__checkbox {
+  grid-column: span 2;
 }
 
 .signup-form label {
   font-weight: bold;
+  margin-right: 1rem;
 }
 
 .signup-form label,
@@ -68,7 +74,15 @@ main {
 @media (min-width: 40rem) {
   .signup-form {
     margin: auto;
-    width: 25rem;
+    padding: 0;
+    width: 30rem;
+    grid-template-columns: 10rem auto;
+    grid-row-gap: 1rem;
+    grid-column-gap: 0.5rem;
+  }
+
+  [id="title"] {
+    grid-column: span 2;
   }
 }
 
